@@ -1,0 +1,19 @@
+# TODO: Configure project metadata, tooling, and dependency versions as implementation stabilizes.
+[project]
+name = "fulfillment-pipeline-sim-backend"
+version = "0.1.0"
+description = "Backend scaffold for fulfillment pipeline simulator"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "sqlalchemy[asyncio]",
+  "asyncpg",
+  "alembic",
+  "pydantic-settings",
+  "websockets",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

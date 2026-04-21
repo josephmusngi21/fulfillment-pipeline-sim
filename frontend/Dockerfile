@@ -1,0 +1,11 @@
+# TODO: Optimize frontend image build and runtime strategy.
+FROM node:20-slim
+
+WORKDIR /app
+
+COPY package.json /app/package.json
+RUN npm install
+
+COPY . /app
+
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "5173"]

@@ -1,0 +1,4 @@
+/* TODO: Add global styles and design tokens. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
